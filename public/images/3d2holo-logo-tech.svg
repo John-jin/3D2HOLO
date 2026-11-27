@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">3D2HOLO Prism Logo</title>
+  <desc id="desc">Minimal futuristic prism with a holographic H monogram.</desc>
+  <defs>
+    <linearGradient id="bg" x1="8%" y1="0%" x2="92%" y2="100%">
+      <stop offset="0%" stop-color="#030816"/>
+      <stop offset="55%" stop-color="#0b1f45"/>
+      <stop offset="100%" stop-color="#122f66"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.42"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="20%" y1="12%" x2="84%" y2="88%">
+      <stop offset="0%" stop-color="#9ae6ff"/>
+      <stop offset="45%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5f3fc"/>
+      <stop offset="50%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#67e8f9" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="outerGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#7dd3fc" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <rect width="256" height="256" rx="56" fill="url(#grid)"/>
+  <circle cx="128" cy="118" r="84" fill="url(#aura)"/>
+
+  <ellipse cx="128" cy="196" rx="60" ry="12" fill="#22d3ee" fill-opacity="0.25" filter="url(#outerGlow)"/>
+  <rect x="116" y="74" width="24" height="124" fill="url(#beam)"/>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 46 64 84v88l64 38 64-38V84z" stroke="url(#frame)" stroke-width="6"/>
+    <path d="M64 84 128 122 192 84" stroke="url(#frame)" stroke-width="5"/>
+    <path d="M128 122v88" stroke="url(#frame)" stroke-width="5"/>
+  </g>
+
+  <g fill="none" stroke="url(#holo)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 92v68"/>
+    <path d="M156 92v68"/>
+    <path d="M100 126h56"/>
+  </g>
+
+  <g fill="#e0f2fe">
+    <circle cx="128" cy="46" r="3.8"/>
+    <circle cx="64" cy="84" r="3.2"/>
+    <circle cx="192" cy="84" r="3.2"/>
+    <circle cx="128" cy="210" r="3.8"/>
+  </g>
+</svg>
